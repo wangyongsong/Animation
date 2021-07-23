@@ -1,8 +1,8 @@
 {
-  "name": "Animation",
+  "name": "animation",
   "version": "1.0.0",
   "private": true,
-  "homepage": "/Animation",
+  "homepage": "https://wangyongsong.github.io/Animation",
   "scripts": {
     "start": "umi dev",
     "build": "umi build",
