@@ -29,6 +29,8 @@
       }
       &:last-of-type {
         padding-top: 0;
+        margin-top: -3px;
+        animation: container-move .1s 1.2s forwards
       }
       .round {
         position: absolute;
@@ -48,12 +50,19 @@
           top: auto;
           bottom: 10px;
           transform: translateY(-50%);
+          filter: blur(10px);
         }
       }
     }
+
+    @keyframes container-move {
+      to { margin-top: -1px }
+    }
+
     @keyframes move {
       to {
-        transform: none;
+          filter: blur(0px);
+          transform: none;
       }
     }
 
@@ -66,7 +75,7 @@
         content: '';
         display: block;
         position: absolute;
-        width: 15px;
+        width: 18px;
         height: 4px;
         right: 31px;
         bottom: 8px;

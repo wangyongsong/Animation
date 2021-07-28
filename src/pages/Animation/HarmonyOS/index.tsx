@@ -14,7 +14,7 @@ const HarmonyOS = () => {
 
         <span className="title">HarmonyOS</span>
       </div>
-        <span className="time">2021年06月02日</span>
+      <span className="time">2021年06月02日</span>
     </div>
   );
 };

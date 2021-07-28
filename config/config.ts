@@ -11,4 +11,9 @@ export default defineConfig({
   },
   routes,
   fastRefresh: {},
+  base: '/Animation/',
+  publicPath: '/Animation/',
+  plugins: [
+    'umi-plugin-gh-pages',
+  ],
 });
