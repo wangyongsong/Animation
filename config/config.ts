@@ -18,8 +18,8 @@ export default defineConfig({
   publicPath: '/Animation/',
   ghPages: {
     useCDN: true,
-    branch: 'gh-pages',
-    silent: true,
-    repo: `https://${process.env.GH_TOKEN}@github.com/Animation.git`,
+    // branch: 'gh-pages',
+    // silent: true,
+    // repo: `https://${process.env.GH_TOKEN}@github.com/Animation.git`,
   },
 });
