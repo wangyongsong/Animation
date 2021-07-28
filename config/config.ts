@@ -11,14 +11,18 @@ export default defineConfig({
   },
   routes,
   fastRefresh: {},
-  // base: '/Animation/',
-  // publicPath: '/Animation/',
+  history: {
+    type: 'hash',
+  },
+  base: '/Animation/',
+  publicPath: '/Animation/',
   // plugins: [
   //   'umi-plugin-gh-pages',
   // ],
   // ghPages: {
+  //   useCDN: true,
   //   branch: 'gh-pages',
   //   silent: true,
-  //   repo: `https://${process.env.ACCESS_TOKEN}@github.com/alitajs/alita-docs.git`,
+  //   repo: `https://${process.env.ACCESS_TOKEN}@github.com/Animation.git`,
   // },
 });
