@@ -1,5 +1,5 @@
 import { defineConfig } from 'umi';
-import defaultSettings from './defaultSettings'
+import defaultSettings from './defaultSettings';
 import routes from './routes';
 
 export default defineConfig({
@@ -7,13 +7,18 @@ export default defineConfig({
     type: 'none',
   },
   layout: {
-    ...defaultSettings
+    ...defaultSettings,
   },
   routes,
   fastRefresh: {},
-  base: '/Animation/',
-  publicPath: '/Animation/',
-  plugins: [
-    'umi-plugin-gh-pages',
-  ],
+  // base: '/Animation/',
+  // publicPath: '/Animation/',
+  // plugins: [
+  //   'umi-plugin-gh-pages',
+  // ],
+  // ghPages: {
+  //   branch: 'gh-pages',
+  //   silent: true,
+  //   repo: `https://${process.env.ACCESS_TOKEN}@github.com/alitajs/alita-docs.git`,
+  // },
 });
