@@ -3,16 +3,18 @@
   "version": "1.0.0",
   "private": true,
   "homepage": "https://wangyongsong.github.io/Animation",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wangyongsong/Animation"
+  },
   "scripts": {
     "start": "umi dev",
     "build": "umi build",
-    "predeploy": "umi build",
-    "deploy": "gh-pages -d build",
     "postinstall": "umi generate tmp",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
-    "gh-pages": "git subtree push --prefix dist origin gh-pages"
+    "githubpage": "git subtree push --prefix dist origin gh-pages"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
